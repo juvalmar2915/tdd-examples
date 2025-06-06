@@ -1,9 +1,9 @@
 require_relative 'fizzbuzz'
 require 'minitest/autorun'
 
+# Tests para la funcion fizzbuzz
 class TestFizzBuzz < Minitest::Test
-
-  def testWithZero
+  def test_with_zero
     assert_equal fizzbuzz(0), 0
   end
 
@@ -31,11 +31,10 @@ class TestFizzBuzz < Minitest::Test
     refute_equal fizzbuzz(18), 'Buzz'
   end
 
-  def test_print_fizz_when_multiple_of_3_and_5
+  def test_print_fizz_when_multiple_of_three_and_five
     assert_equal fizzbuzz(15), 'FizzBuzz'
     assert_equal fizzbuzz(45), 'FizzBuzz'
     refute_equal fizzbuzz(20), 'FizzBuzz'
     refute_equal fizzbuzz(50), 'FizzBuzz'
   end
 end
-

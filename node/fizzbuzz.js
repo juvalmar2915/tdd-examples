@@ -1,14 +1,14 @@
-function fizzbuzz(n) {
+function fizzbuzz (n) {
   if (n === 0) {
-    return n;
+    return n
   } else if (n % 3 === 0 && n % 5 === 0) {
-    return 'FizzBuzz';
+    return 'FizzBuzz'
   } else if (n % 3 === 0) {
-    return 'Fizz';
+    return 'Fizz'
   } else if (n % 5 === 0) {
-    return 'Buzz';
+    return 'Buzz'
   } else {
-    return n;
+    return n
   }
 }
 
